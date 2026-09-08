@@ -8,6 +8,16 @@ implementa, non codice di produzione.
 
 ## File
 
+- **`hotsflow-reference.html`** — i due documenti sotto, **unificati in un
+  solo file**: stesso contenuto, una sola pagina con una barra in alto per
+  saltare da una sezione all'altra (`#design-standard` / `#app-shell`). È il
+  file consigliato per la condivisione — un solo link, nessuna build.
+  Il CSS delle due sezioni è isolato (scoped) l'una dall'altra: dove i due
+  documenti riusano lo stesso nome di classe con stili diversi (es.
+  `.switch-panel`, `.btn`, `.modal-card`), ciascuna sezione mantiene il
+  proprio aspetto originale senza interferenze. Generato meccanicamente dai
+  due file sorgente qui sotto — se questi cambiano, questo va rigenerato.
+
 - **`app-shell-prototype.html`** — prototipo dell'App Shell Hotsflow: shell
   di navigazione globale (sidebar, Home per ruolo, Moduli/Team/Impostazioni),
   stati dei moduli, stati di sistema condivisi, note su deep-linking e
@@ -34,3 +44,6 @@ browser.
 - I link "Live" sopra puntano alle versioni pubblicate come Claude Artifact;
   i file in questo repo sono lo snapshot corrispondente, per condivisione e
   versionamento fuori da quella piattaforma.
+- Per condividere in un solo link: `hotsflow-reference.html`. Per lavorare
+  separatamente su design system e prototipo (es. copiare solo i token CSS),
+  i due file originali restano disponibili singolarmente.
