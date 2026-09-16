@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
 
-<title>Hotsflow Design Standard</title>
+<title>Homisuite Design Standard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Public+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -563,7 +563,7 @@
 
 <div class="shell">
   <aside class="side">
-    <div class="eyebrow">Hotsflow</div>
+    <div class="eyebrow">Homisuite</div>
     <div class="title">Design Standard</div>
     <div class="ver">v2</div>
     <nav>
@@ -622,9 +622,9 @@
 
   <main>
     <div class="hero" id="intro">
-      <div class="eyebrow">Suite Hotsflow — Design System v2</div>
+      <div class="eyebrow">Suite Homisuite — Design System v2</div>
       <h1>Uno standard normativo, non più esplorativo</h1>
-      <p>La v1 mescolava decisioni prese con le alternative scartate, e il Design System vero e proprio con la App Shell specifica di Hotsflow. Questa versione separa i due livelli, chiude le decisioni aperte (con le alternative spostate nel Decision Log in fondo) e aggiunge quello che mancava per essere davvero implementabile: accessibilità, densità, motion, token strutturali, validazione dei campi, paginazione, il pannello notifiche, il recupero password, un pattern di pagina di report e la stampa. Non tocca database, auth, permessi o codice applicativo — quello vive in una chat separata dedicata al Platform Core.</p>
+      <p>La v1 mescolava decisioni prese con le alternative scartate, e il Design System vero e proprio con la App Shell specifica di Homisuite. Questa versione separa i due livelli, chiude le decisioni aperte (con le alternative spostate nel Decision Log in fondo) e aggiunge quello che mancava per essere davvero implementabile: accessibilità, densità, motion, token strutturali, validazione dei campi, paginazione, il pannello notifiche, il recupero password, un pattern di pagina di report e la stampa. Non tocca database, auth, permessi o codice applicativo — quello vive in una chat separata dedicata al Platform Core.</p>
     </div>
 
     <div class="part"><div class="n">01</div><h2>Principles</h2><p>Cinque regole che spiegano il "perché" dietro ogni decisione nelle sezioni successive — quando una scelta nuova non è coperta esplicitamente, si torna qui.</p></div>
@@ -632,7 +632,7 @@
       <div class="content principle-grid">
         <div class="principle"><div class="num">01</div><div class="txt"><b>Il colore ha un solo significato per contesto</b><p>Lo stesso viola non è mai "brand" in un punto e "stato" in un altro. Status, severity e action sono tre assi separati, anche quando condividono una tonalità.</p></div></div>
         <div class="principle"><div class="num">02</div><div class="txt"><b>Mai un solo segnale</b><p>Colore + forma insieme, sempre. Un'icona diversa, un'etichetta di testo, una posizione — mai un pallino colorato come unico modo per capire cosa sta succedendo.</p></div></div>
-        <div class="principle"><div class="num">03</div><div class="txt"><b>Design System ≠ App Shell</b><p>I token e i componenti sono riusabili da chiunque costruisca un'interfaccia Hotsflow. La barra di navigazione, il selettore property, il login sono specifici di <i>questa</i> suite — non sono "componenti", sono decisioni di prodotto.</p></div></div>
+        <div class="principle"><div class="num">03</div><div class="txt"><b>Design System ≠ App Shell</b><p>I token e i componenti sono riusabili da chiunque costruisca un'interfaccia Homisuite. La barra di navigazione, il selettore property, il login sono specifici di <i>questa</i> suite — non sono "componenti", sono decisioni di prodotto.</p></div></div>
         <div class="principle"><div class="num">04</div><div class="txt"><b>Comfortable dove serve, compact dove aiuta</b><p>Non esiste una densità giusta per tutto. Le superfici guest-facing e touch restano larghe e leggibili; le viste operative dense (Transfer, tabelle admin) possono stringersi, mai il contrario.</p></div></div>
         <div class="principle"><div class="num">05</div><div class="txt"><b>Riferimento, non gabbia</b><p>Planner Turni non viene toccato per decreto. Lo standard descrive dove le tre app convergeranno; l'adozione in ciascuna resta una decisione separata, con i suoi tempi.</p></div></div>
       </div>
@@ -857,7 +857,7 @@
       </div>
     </section>
 
-    <div class="part"><div class="n">03</div><h2>Components</h2><p>Riusabili in qualunque interfaccia Hotsflow, indipendenti dalla App Shell. La scala d'azione qui sotto è la correzione più visibile rispetto alla v1.</p></div>
+    <div class="part"><div class="n">03</div><h2>Components</h2><p>Riusabili in qualunque interfaccia Homisuite, indipendenti dalla App Shell. La scala d'azione qui sotto è la correzione più visibile rispetto alla v1.</p></div>
 
     <section id="buttons">
       <h3>Bottoni — Action Hierarchy, separata dal Semantic System</h3>
@@ -1223,7 +1223,7 @@
       </div>
       <div class="note"><span>💡</span><div>Compare solo quando si prova a <i>uscire</i> con un form sporco (chiusura del pannello, cambio di route, tasto indietro) — mai come conferma di un semplice "Annulla" già presente sul form stesso, altrimenti diventa una doppia domanda per la stessa intenzione. "Scarta ed esci" resta <code>btn-danger</code> soft: perdere del testo scritto è meno grave di eliminare un record, non merita il rosso pieno di <a href="#buttons">Bottoni</a>.</div></div>
 
-      <p class="lede" style="margin-top:22px">Timeout di sessione — mai considerato, ma rilevante proprio per i contesti dove Hotsflow gira su un dispositivo condiviso: un tablet di reception, un terminale di piano, il telefono di un ospite lasciato in camera. Avviso prima, non un logout muto: chi sta ancora lavorando ha il tempo di restare dentro.</p>
+      <p class="lede" style="margin-top:22px">Timeout di sessione — mai considerato, ma rilevante proprio per i contesti dove Homisuite gira su un dispositivo condiviso: un tablet di reception, un terminale di piano, il telefono di un ospite lasciato in camera. Avviso prima, non un logout muto: chi sta ancora lavorando ha il tempo di restare dentro.</p>
       <div class="content demo-block" style="align-items:flex-start">
         <div class="modal-scrim">
           <div class="modal-card">
@@ -1279,7 +1279,7 @@
       <h3>Iconografia</h3>
       <p class="lede"><b>Libreria di base: Lucide</b> — per icone generiche (search, calendar, settings, user, bell, plus, trash, edit, check, x, chevron, filter, phone, mail, upload, download, copy, save, clock, refresh, statistiche…). Nessuna ragione di continuare a disegnarle a mano: Planner Turni e Housekeeping avevano già, indipendentemente, convergato sulla stessa identica grammatica di Lucide (24×24, stroke, estremità arrotondate) — adottarla è un cambio di libreria, non di stile visivo.</p>
       <div class="content">
-        <div class="fc-ui" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);margin-bottom:10px">Custom — solo concetti davvero specifici Hotsflow</div>
+        <div class="fc-ui" style="font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--ink-2);margin-bottom:10px">Custom — solo concetti davvero specifici Homisuite</div>
         <div class="icon-row">
           <div class="icon-chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14h16l-2 5c-.4 1-1.6 1.5-2.8 1.5H8.8c-1.2 0-2.4-.5-2.8-1.5l-2-5Z"/><rect x="9" y="9" width="6" height="5" rx="1"/><path d="M2 20c1-1 2-1 3 0s2 1 3 0 2-1 3 0 2 1 3 0 2-1 3 0 2 1 3 0"/></svg><span class="lbl">water taxi</span></div>
           <div class="icon-chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v7M3 18v2M21 18v2M3 14h18M7 11V9a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v2"/></svg><span class="lbl">camera</span></div>
@@ -1361,7 +1361,7 @@
       <div class="note"><span>💡</span><div>Il contatore su "Applica" mostra quanti criteri sono attivi <i>prima</i> di confermare — chi apre il pannello sa già cosa sta per succedere. Se un giorno questo pattern serve davvero, resta un pannello (non un modale): filtrare non è una decisione a due vie che blocca il resto dello schermo.</div></div>
     </section>
 
-    <div class="part"><div class="n">04</div><h2>Hotsflow App Shell</h2><p>Non è "componenti riusabili" — è la decisione di prodotto su come la suite si presenta. Specifico di Hotsflow, non del Design System generico.</p></div>
+    <div class="part"><div class="n">04</div><h2>Homisuite App Shell</h2><p>Non è "componenti riusabili" — è la decisione di prodotto su come la suite si presenta. Specifico di Homisuite, non del Design System generico.</p></div>
 
     <section id="navigation">
       <h3>Navigazione globale</h3>
@@ -1369,7 +1369,7 @@
       <div class="content">
         <div class="navbar-scroll">
         <div class="navbar">
-          <div class="navbar-brand"><span class="mark">H</span>Hotsflow</div>
+          <div class="navbar-brand"><span class="mark">H</span>Homisuite</div>
           <div class="navbar-sep"></div>
           <button class="navbar-prop">Palazzo Veneziano<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
           <div class="navbar-links">
@@ -1541,7 +1541,7 @@
       <div class="content demo-block" style="align-items:flex-start">
         <div class="auth-card">
           <div class="icon-badge"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg></div>
-          <div class="eyebrow">Hotsflow</div>
+          <div class="eyebrow">Homisuite</div>
           <div class="title">Accedi</div>
           <div class="sub">Con la tua email o il tuo nome utente — il tuo ruolo e le tue property vengono determinati dopo l'accesso</div>
           <div class="ab">
@@ -1655,7 +1655,7 @@
               <tr><td>Nguyen Thi</td><td>Notte</td><td>23:00–07:00</td></tr>
             </tbody>
           </table>
-          <div class="ps-foot"><span>Hotsflow</span><span>Pagina 1 di 1</span></div>
+          <div class="ps-foot"><span>Homisuite</span><span>Pagina 1 di 1</span></div>
         </div>
         <div class="print-checklist" style="flex:1;min-width:260px">
           <div class="col out"><div class="ct">Sparisce in stampa</div><ul><li>Navbar, property/module selector</li><li>Bottoni, chip, toolbar</li><li>Pannelli, modali, toast aperti</li><li>Sfondo e ombre — solo bianco/nero</li></ul></div>

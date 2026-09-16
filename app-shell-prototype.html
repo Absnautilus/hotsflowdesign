@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
-<title>Hotsflow App Shell</title>
+<title>Homisuite App Shell</title>
 <script>document.documentElement.setAttribute('data-theme','light');</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -703,9 +703,9 @@
 </style>
 
 <div class="proto-intro">
-  <div class="eyebrow">Hotsflow · Phase 0 — UI proposal / prototype only</div>
+  <div class="eyebrow">Homisuite · Phase 0 — UI proposal / prototype only</div>
   <h1>App Shell — bozza statica, non collegata al backend</h1>
-  <p>Riferimento strutturale: il mockup approvato (sidebar persistente, property selector, moduli, Moduli/Team/Impostazioni). Visual language: token reali della suite Hotsflow verificati nel codice di Housekeeping e Transfer — <b style="color:var(--ink)">#9C4FC7</b>, Manrope/Public Sans/JetBrains Mono, stessi radius/ombre/badge dei moduli esistenti. Nessuna riga di questa pagina scrive su un database, chiama un modulo reale o modifica un'app in produzione.</p>
+  <p>Riferimento strutturale: il mockup approvato (sidebar persistente, property selector, moduli, Moduli/Team/Impostazioni). Visual language: token reali della suite Homisuite verificati nel codice di Housekeeping e Transfer — <b style="color:var(--ink)">#9C4FC7</b>, Manrope/Public Sans/JetBrains Mono, stessi radius/ombre/badge dei moduli esistenti. Nessuna riga di questa pagina scrive su un database, chiama un modulo reale o modifica un'app in produzione.</p>
   <div class="flags">
     <span class="flag">Home per ruolo, ogni stato modulo richiesto</span>
     <span class="flag">Nessun backend</span>
@@ -723,11 +723,11 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/login</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/login</span></div>
     <div class="auth-wrap">
       <div class="auth-card">
         <div class="icon-badge"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg></div>
-        <div class="title">Accedi a Hotsflow</div>
+        <div class="title">Accedi a Homisuite</div>
         <div class="sub">Un solo account per tutti i moduli a cui hai accesso — receptionist, manager o admin: lo stesso schermo per tutti.</div>
         <div class="mode-toggle"><button class="active">Email</button><button>Nome utente + PIN</button></div>
         <div class="fld"><label>Email</label><input placeholder="ana@palazzoveneziano.it"></div>
@@ -756,7 +756,7 @@
     <div class="who-col">
       <div class="who-tag"><span class="ic" style="background:var(--accent-soft);color:var(--accent)"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c0-3.6 2.5-6 5.5-6s5.5 2.4 5.5 6"/></svg></span><div><div class="t">Staff — stesso login, ruolo risolto dopo</div><div class="s">Admin, manager, receptionist/operatore</div></div></div>
       <div class="frame">
-        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/login</span></div>
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/login</span></div>
         <div class="auth-wrap" style="padding:32px 20px;">
           <div class="auth-card" style="width:100%;padding:26px 22px 22px;">
             <div class="mode-toggle" style="margin-top:0;"><button>Email</button><button class="active">Nome utente + PIN</button></div>
@@ -769,7 +769,7 @@
       <div class="caption" style="max-width:100%;">↑ Stesso modulo di login di sopra, solo con "Nome utente + PIN" selezionato — un operatore raramente ha un'email di lavoro. <b>Capability proposta, non ancora nel Core</b>: il problema è reale e verificato (Housekeeping ha già oggi un proprio login <code>login_username</code>+PIN per gli operatori, <code>operator-login.ts</code>), ma è un meccanismo del modulo, contro il proprio <code>auth.users</code> — un login unificato di shell che risolve username+PIN contro il Core condiviso non esiste ancora, va costruito. Il resto della descrizione (il Core risolve comunque il ruolo da <code>memberships</code>, nessuna schermata "scegli il tuo ruolo") resta corretto per il modo Email, già Core-nativo.</div>
 
       <div class="frame" style="margin-top:16px;">
-        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/login/palazzo-veneziano</span></div>
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/login/palazzo-veneziano</span></div>
         <div class="auth-wrap" style="padding:32px 20px;">
           <div class="auth-card" style="width:100%;padding:26px 22px 22px;">
             <div class="icon-badge" style="width:40px;height:40px;margin-bottom:12px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></div>
@@ -798,7 +798,7 @@
           <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:16px;">Accedi</button>
         </div>
       </div>
-      <div class="caption" style="max-width:100%;">↑ Nessuna sidebar, nessun brand "app.hotsflow.com": questa è l'esperienza guest già esistente di Housekeeping (camera+PIN), non toccata. Transfer usa un metodo diverso per il proprio ospite (link diretto <code>/richiedi/[hotel]</code>, nessun login) — la shell non uniforma <i>come</i> l'ospite entra, solo <i>come si comporta</i> lo staff una volta dentro. Un ospite non ha mai una "property" nel senso di questa shell: non vede Moduli, Team, il property selector.</div>
+      <div class="caption" style="max-width:100%;">↑ Nessuna sidebar, nessun brand "app.homisuite.com": questa è l'esperienza guest già esistente di Housekeeping (camera+PIN), non toccata. Transfer usa un metodo diverso per il proprio ospite (link diretto <code>/richiedi/[hotel]</code>, nessun login) — la shell non uniforma <i>come</i> l'ospite entra, solo <i>come si comporta</i> lo staff una volta dentro. Un ospite non ha mai una "property" nel senso di questa shell: non vede Moduli, Team, il property selector.</div>
     </div>
   </div>
   </div>
@@ -993,10 +993,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop">
           <span class="mk">PV</span>
           <span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span>
@@ -1095,7 +1095,7 @@
             <div class="m-card ghost">
               <div class="hd"><span class="ic" style="background:var(--slate-bg);color:var(--slate-ink)"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span class="nm">Transfer</span></div>
               <span class="pill" style="--pb:var(--slate-bg);--pi:var(--slate-ink);--pl:var(--slate-line)"><span class="dot"></span>Available</span>
-              <div class="body-txt">Gestisci i transfer aeroportuali e i trasferimenti degli ospiti direttamente da Hotsflow.</div>
+              <div class="body-txt">Gestisci i transfer aeroportuali e i trasferimenti degli ospiti direttamente da Homisuite.</div>
               <button class="btn btn-secondary cta">Prova il modulo</button>
             </div>
           </div>
@@ -1172,7 +1172,7 @@
   <div class="content-narrow" style="margin:0 auto;">
   <div class="nav-flow">
     <div class="mini-frame">
-      <div class="mf-bar"><span class="url">app.hotsflow.com/</span></div>
+      <div class="mf-bar"><span class="url">app.homisuite.com/</span></div>
       <div class="mf-body">
         <div class="mf-sb"><div class="m"></div><div class="r on" style="width:70%"></div><div class="r" style="width:60%"></div><div class="r" style="width:60%"></div><div class="r" style="width:60%"></div></div>
         <div class="mf-main"><div class="b1"></div><div class="b2"></div><div class="b2"></div><div class="b2"></div></div>
@@ -1183,7 +1183,7 @@
       <span class="lbl">click su "Apri coda" o sulla voce in sidebar</span>
     </div>
     <div class="mini-frame">
-      <div class="mf-bar"><span class="url">app.hotsflow.com/requests</span></div>
+      <div class="mf-bar"><span class="url">app.homisuite.com/requests</span></div>
       <div class="mf-body">
         <div class="mf-sb"><div class="m"></div><div class="r" style="width:60%"></div><div class="r on" style="width:70%"></div><div class="r" style="width:60%"></div><div class="r" style="width:60%"></div></div>
         <div class="mf-main"><div class="b1"></div><div class="b2" style="height:60px"></div></div>
@@ -1200,10 +1200,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/ · Marco Bianchi</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/ · Marco Bianchi</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
         <a class="sb-item active"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
         <div class="sb-grp">Moduli</div>
@@ -1260,11 +1260,11 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/</span></div>
     <div class="shell shell-collapsible">
       <nav class="sb">
         <label class="sb-collapse-btn" title="Comprimi/espandi sidebar"><input type="checkbox" class="sb-collapse-input"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17l-5-5 5-5M18 17l-5-5 5-5"/></svg></label>
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop">
           <span class="mk">PV</span>
           <span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span>
@@ -1340,7 +1340,7 @@
             <div class="m-card ghost">
               <div class="hd"><span class="ic" style="background:var(--slate-bg);color:var(--slate-ink)"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span><span class="nm">Transfer</span></div>
               <span class="pill" style="--pb:var(--slate-bg);--pi:var(--slate-ink);--pl:var(--slate-line)"><span class="dot"></span>Available</span>
-              <div class="body-txt">Gestisci i transfer aeroportuali e i trasferimenti degli ospiti direttamente da Hotsflow.</div>
+              <div class="body-txt">Gestisci i transfer aeroportuali e i trasferimenti degli ospiti direttamente da Homisuite.</div>
               <button class="btn btn-secondary cta">Prova il modulo</button>
             </div>
           </div>
@@ -1357,7 +1357,7 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/requests</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/requests</span></div>
     <div style="background:var(--bg);">
       <div class="solo-top">
         <span class="mark">PV</span>
@@ -1393,10 +1393,10 @@
     <div>
       <div class="fc-lbl" style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:10px;">Operatore · reparto Housekeeping</div>
       <div class="frame">
-        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/requests</span></div>
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/requests</span></div>
         <div class="shell">
           <nav class="sb">
-            <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+            <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
             <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
             <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
             <div class="sb-grp">Moduli</div>
@@ -1432,10 +1432,10 @@
     <div>
       <div class="fc-lbl" style="font-size:10.5px;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:10px;">Admin · Palazzo Veneziano</div>
       <div class="frame">
-        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/requests</span></div>
+        <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/requests</span></div>
         <div class="shell">
           <nav class="sb">
-            <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+            <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
             <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
             <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
             <div class="sb-grp">Moduli</div>
@@ -1483,10 +1483,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/ · Hotel Demo</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/ · Hotel Demo</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop demo">
           <span class="mk">HD</span>
           <span class="info"><span class="n">Hotel Demo</span><span class="t">Modalità esplorazione</span></span>
@@ -1526,10 +1526,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/modules</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/modules</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
         <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
         <div class="sb-grp">Moduli</div>
@@ -1544,7 +1544,7 @@
         <div class="sb-account"><span class="av">AS</span><span class="info"><span class="n">Ana Simone</span><span class="r">Property Admin</span></span></div>
       </nav>
       <div class="main">
-        <div class="tb"><div><h3>Moduli</h3><div class="sub">Catalogo moduli Hotsflow per Palazzo Veneziano</div></div></div>
+        <div class="tb"><div><h3>Moduli</h3><div class="sub">Catalogo moduli Homisuite per Palazzo Veneziano</div></div></div>
         <div class="content content-narrow">
           <div class="tbl-wrap">
             <div class="cat-row">
@@ -1585,7 +1585,7 @@
             <span class="ic"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm14 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/><path d="M3 17V9a2 2 0 0 1 2-2h9l4 4v6"/></svg></span>
             <div>
               <h4>Resta fuori dalla shell, di proposito</h4>
-              <p>Un ospite di Hotsflow è un <b>hotel</b>: property, membership, ruoli, "Team" — tutto quello che vedi qui — descrive lo staff dell'hotel. Transfer però ha anche un secondo tipo di account che non appartiene a nessun hotel: la <b>compagnia taxi</b> (<code>TaxiCompany</code>) e i suoi <b>autisti</b> (<code>Driver</code>), verificato nell'audit tecnico. Per decisione già presa in <code>hotsflow-core</code> (§M4), questi login <b>non entrano nel Core condiviso</b> — restano esattamente come sono oggi in Transfer, un login/portale separato, fuori da <span class="mono">app.hotsflow.com</span>. Non li vedrai mai nella sidebar, in Team o nel property selector: un autista non ha una property, ha delle corse assegnate. Se un giorno servisse dar loro un'esperienza più curata, sarebbe un portale a parte con la stessa identità visiva — non un accesso alla shell.</p>
+              <p>Un ospite di Homisuite è un <b>hotel</b>: property, membership, ruoli, "Team" — tutto quello che vedi qui — descrive lo staff dell'hotel. Transfer però ha anche un secondo tipo di account che non appartiene a nessun hotel: la <b>compagnia taxi</b> (<code>TaxiCompany</code>) e i suoi <b>autisti</b> (<code>Driver</code>), verificato nell'audit tecnico. Per decisione già presa in <code>hotsflow-core</code> (§M4), questi login <b>non entrano nel Core condiviso</b> — restano esattamente come sono oggi in Transfer, un login/portale separato, fuori da <span class="mono">app.homisuite.com</span>. Non li vedrai mai nella sidebar, in Team o nel property selector: un autista non ha una property, ha delle corse assegnate. Se un giorno servisse dar loro un'esperienza più curata, sarebbe un portale a parte con la stessa identità visiva — non un accesso alla shell.</p>
             </div>
           </div>
         </div>
@@ -1600,7 +1600,7 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/team</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/team</span></div>
     <div class="content content-narrow" style="background:var(--bg);padding:26px 28px;">
       <div class="section-hd" style="margin-bottom:14px;"><h4 style="font-size:16px;text-transform:none;letter-spacing:0;color:var(--ink);">Team — Palazzo Veneziano</h4><button class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>Invita</button></div>
       <div class="tbl-wrap" style="margin-bottom:18px;">
@@ -1723,7 +1723,7 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/onboarding</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/onboarding</span></div>
     <div class="content" style="background:var(--bg);padding:44px 28px;">
       <div class="ob-page">
         <div class="eyebrow">Nuova property</div>
@@ -1748,10 +1748,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/requests</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/requests</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
         <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
         <div class="sb-grp">Moduli</div>
@@ -1782,7 +1782,7 @@
               </tbody>
             </table>
           </div>
-          <div class="caption">↑ Nessuna riga di questa tabella è cambiata rispetto a Housekeeping oggi — badge, densità, colonne <span class="mono">font-data</span> a destra sono già lo stesso componente. <b>Nome deliberatamente generico:</b> il prodotto reale (verificato in <code>components/logo.tsx</code>, header staff <i>e</i> header ospite) si chiama internamente "RoomCall" — ma Hotsflow è l'unico brand di prodotto della suite, i moduli non hanno un nome indipendente: qui è "Housekeeping" ovunque, coerente con Turni/Transfer. <b>La sotto-barra qui sopra</b> è la navbar propria del modulo (verificata in <code>dashboard-header.tsx</code>), non inventata: nel prodotto reale contiene anche brand, account e logout, che qui spariscono perché la shell li possiede già — restano solo i 3 link di navigazione interna (Richieste/Soggiorni/Admin, con lo stesso gating per ruolo di <b>oggi</b> — comportamento legacy del modulo, <code>operatore</code>/<code>admin</code>/<code>master</code> locali via RLS, non ancora l'architettura target del Core descritta in 04b: Soggiorni solo reception/admin, Admin solo ruoli admin) e il toggle "in servizio", che è un'azione frequente durante il turno e non un'impostazione da nascondere in un menu. Lingua sparisce dalla sua navbar per un motivo preciso, non solo perché ridondante: diventa un'impostazione di shell (il toggle in topbar, sezione 01), unica per tutti i moduli — non ha senso scegliere una lingua diversa per ogni modulo che apri nella stessa sessione. Dimensione testo/notifiche del modulo, invece, restano scelte specifiche di Housekeeping: diventano voci in Impostazioni → Moduli → Housekeeping, non spariscono e non salgono a livello di shell.</div>
+          <div class="caption">↑ Nessuna riga di questa tabella è cambiata rispetto a Housekeeping oggi — badge, densità, colonne <span class="mono">font-data</span> a destra sono già lo stesso componente. <b>Nome deliberatamente generico:</b> il prodotto reale (verificato in <code>components/logo.tsx</code>, header staff <i>e</i> header ospite) si chiama internamente "RoomCall" — ma Homisuite è l'unico brand di prodotto della suite, i moduli non hanno un nome indipendente: qui è "Housekeeping" ovunque, coerente con Turni/Transfer. <b>La sotto-barra qui sopra</b> è la navbar propria del modulo (verificata in <code>dashboard-header.tsx</code>), non inventata: nel prodotto reale contiene anche brand, account e logout, che qui spariscono perché la shell li possiede già — restano solo i 3 link di navigazione interna (Richieste/Soggiorni/Admin, con lo stesso gating per ruolo di <b>oggi</b> — comportamento legacy del modulo, <code>operatore</code>/<code>admin</code>/<code>master</code> locali via RLS, non ancora l'architettura target del Core descritta in 04b: Soggiorni solo reception/admin, Admin solo ruoli admin) e il toggle "in servizio", che è un'azione frequente durante il turno e non un'impostazione da nascondere in un menu. Lingua sparisce dalla sua navbar per un motivo preciso, non solo perché ridondante: diventa un'impostazione di shell (il toggle in topbar, sezione 01), unica per tutti i moduli — non ha senso scegliere una lingua diversa per ogni modulo che apri nella stessa sessione. Dimensione testo/notifiche del modulo, invece, restano scelte specifiche di Housekeeping: diventano voci in Impostazioni → Moduli → Housekeeping, non spariscono e non salgono a livello di shell.</div>
         </div>
       </div>
     </div>
@@ -1795,10 +1795,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/transfers</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/transfers</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
         <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
         <div class="sb-grp">Moduli</div>
@@ -1827,7 +1827,7 @@
               </tbody>
             </table>
           </div>
-          <div class="caption">↑ 5 tab (Richieste/Transfer/Tratte/Contabilità/Team, verificate in <code>app/hotel/layout.tsx</code> — Contabilità e Team solo per <code>isOrgAdmin</code>) stanno comunque nella stessa sotto-barra minimale usata per Housekeeping, senza bisogno di più spazio: è lo stile di shell applicato senza eccezioni, come richiesto. Nel prodotto reale questi stessi 5 link vivono in un'unica pillola col brand interno "FromTo", account e logout — qui diventa genericamente "Transfer" (Hotsflow è l'unico brand di prodotto, i moduli non hanno un nome proprio) e brand/account/logout spariscono per lo stesso motivo di Housekeeping. Il toggle lingua della dashboard reale di Transfer (in realtà: dimensione testo, non lingua — verificato in <code>dashboard-shell.tsx</code>, il selettore lingua lì esiste solo sulle pagine pubbliche ospite/autista) diventerebbe comunque una voce in Impostazioni → Moduli → Transfer, non uno stato a parte.</div>
+          <div class="caption">↑ 5 tab (Richieste/Transfer/Tratte/Contabilità/Team, verificate in <code>app/hotel/layout.tsx</code> — Contabilità e Team solo per <code>isOrgAdmin</code>) stanno comunque nella stessa sotto-barra minimale usata per Housekeeping, senza bisogno di più spazio: è lo stile di shell applicato senza eccezioni, come richiesto. Nel prodotto reale questi stessi 5 link vivono in un'unica pillola col brand interno "FromTo", account e logout — qui diventa genericamente "Transfer" (Homisuite è l'unico brand di prodotto, i moduli non hanno un nome proprio) e brand/account/logout spariscono per lo stesso motivo di Housekeeping. Il toggle lingua della dashboard reale di Transfer (in realtà: dimensione testo, non lingua — verificato in <code>dashboard-shell.tsx</code>, il selettore lingua lì esiste solo sulle pagine pubbliche ospite/autista) diventerebbe comunque una voce in Impostazioni → Moduli → Transfer, non uno stato a parte.</div>
         </div>
       </div>
     </div>
@@ -1840,10 +1840,10 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/turni</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/turni</span></div>
     <div class="shell">
       <nav class="sb">
-        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+        <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
         <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
         <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
         <div class="sb-grp">Moduli</div>
@@ -1921,7 +1921,7 @@
   <div class="phone drawer-open">
     <div class="drawer-scrim"></div>
     <div class="drawer-panel">
-      <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Hotsflow</span></div>
+      <div class="sb-brand"><span class="mark">H</span><span class="wordmark">Homisuite</span></div>
       <button class="sb-prop"><span class="mk">PV</span><span class="info"><span class="n">Palazzo Veneziano</span><span class="t">Venezia</span></span><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l4 4 4-4"/><path d="M8 15l4-4 4 4"/></svg></button>
       <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
       <div class="sb-grp">Moduli</div>
@@ -1977,7 +1977,7 @@
       </div>
     </div>
     <div class="caption" style="max-width:420px;">
-      Niente bottom nav qui dentro — la freccia in alto a sinistra torna alla schermata di provenienza (di norma Home), non è "indietro nel browser". <b>Altro</b>, in fondo alle tab, apre le destinazioni secondarie del modulo (Report, Impostazioni Housekeeping) — decisione presa, vedi 07d. L'hamburger resta separato, solo per la navigazione globale di Hotsflow.<br><br>
+      Niente bottom nav qui dentro — la freccia in alto a sinistra torna alla schermata di provenienza (di norma Home), non è "indietro nel browser". <b>Altro</b>, in fondo alle tab, apre le destinazioni secondarie del modulo (Report, Impostazioni Housekeeping) — decisione presa, vedi 07d. L'hamburger resta separato, solo per la navigazione globale di Homisuite.<br><br>
       <b>Richieste / Camere</b> sono le uniche due tab permanenti: le 2-3 destinazioni usate di continuo durante il turno — sono <i>navigazione</i> di modulo, cambiano cosa vedi. <b>Tutte / Da fare / In corso</b>, subito sotto, sono <i>filtri</i> sulla stessa schermata — stesso posto, stesso elenco, vista ristretta. Le ho rese visivamente diverse apposta (sottolineatura per le tab, pillole per i filtri): confonderle sarebbe far sembrare 5 destinazioni dove ce ne sono 2.
     </div>
   </div>
@@ -1998,7 +1998,7 @@
           <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18.7 8 13 13.7l-4-4L4.7 15"/></svg><span class="lbl">Report</span></a>
           <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/></svg><span class="lbl">Impostazioni Housekeeping</span></a>
           <div style="height:1px;background:var(--navbar-border);margin:10px 2px;"></div>
-          <div class="sb-grp">Hotsflow</div>
+          <div class="sb-grp">Homisuite</div>
           <a class="sb-item"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg><span class="lbl">Home</span></a>
           <a class="sb-item trial"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18"/></svg><span class="lbl">Turni</span></a>
           <a class="sb-item discover"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span class="lbl">Transfer</span></a>
@@ -2109,7 +2109,7 @@
     <div class="modal-card center">
       <div class="ic" style="background:var(--accent-soft);color:var(--accent)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
       <div class="title">Attivazione in arrivo</div>
-      <div class="desc">La gestione di piani e pagamenti per i moduli Hotsflow non è ancora disponibile. Scrivi al tuo referente per attivare Turni oltre il trial.</div>
+      <div class="desc">La gestione di piani e pagamenti per i moduli Homisuite non è ancora disponibile. Scrivi al tuo referente per attivare Turni oltre il trial.</div>
       <div class="actions"><button class="btn btn-ghost">Chiudi</button><button class="btn btn-primary">Contatta il team</button></div>
     </div>
   </div>
@@ -2123,7 +2123,7 @@
   </div>
 
   <div class="frame">
-    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.hotsflow.com/settings</span></div>
+    <div class="frame-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">app.homisuite.com/settings</span></div>
     <div class="content content-narrow" style="background:var(--bg);padding:26px 28px;">
       <div class="settings-tabs"><button class="active">Property</button><button>Account</button><button>Moduli</button></div>
       <div class="set-card">
@@ -2196,7 +2196,7 @@
   <div class="content-narrow" style="margin:0 auto;">
   <div class="set-card">
     <h4>Un link diretto ricostruisce il contesto, non salta la shell</h4>
-    <div style="font-family:var(--mono);font-size:11.5px;background:var(--surface-2);border-radius:var(--r-sm);padding:10px 14px;margin:12px 0 18px;color:var(--ink-2);overflow-x:auto;">app.hotsflow.com/housekeeping/richieste/a12f3</div>
+    <div style="font-family:var(--mono);font-size:11.5px;background:var(--surface-2);border-radius:var(--r-sm);padding:10px 14px;margin:12px 0 18px;color:var(--ink-2);overflow-x:auto;">app.homisuite.com/housekeeping/richieste/a12f3</div>
     <div style="display:flex;flex-direction:column;gap:12px;">
       <div style="display:flex;gap:12px;align-items:flex-start;"><span style="font-family:var(--mono);font-weight:800;color:var(--accent);width:16px;flex-shrink:0;">1</span><span style="font-size:12.5px;color:var(--ink-2);">Ripristina la shell — sessione e profilo</span></div>
       <div style="display:flex;gap:12px;align-items:flex-start;"><span style="font-family:var(--mono);font-weight:800;color:var(--accent);width:16px;flex-shrink:0;">2</span><span style="font-size:12.5px;color:var(--ink-2);">Risolve organization/property corretta per questo link</span></div>
@@ -2217,7 +2217,7 @@
   <div class="content-narrow" style="margin:0 auto;">
   <div class="set-card">
     <div class="hier-diagram">
-      <div class="hier-row" style="margin-left:0;"><span class="hier-badge" style="background:var(--accent);color:#fff;">1</span><div><div class="n">Hotsflow</div><div class="d">La piattaforma — livello shell</div></div></div>
+      <div class="hier-row" style="margin-left:0;"><span class="hier-badge" style="background:var(--accent);color:#fff;">1</span><div><div class="n">Homisuite</div><div class="d">La piattaforma — livello shell</div></div></div>
       <div class="hier-row" style="margin-left:22px;"><span class="hier-badge">2</span><div><div class="n">Palazzo Veneziano</div><div class="d">Property — il contesto operativo corrente</div></div></div>
       <div class="hier-row" style="margin-left:44px;"><span class="hier-badge">3</span><div><div class="n">Housekeeping</div><div class="d">Modulo</div></div></div>
       <div class="hier-row" style="margin-left:66px;"><span class="hier-badge">4</span><div><div class="n">Richieste</div><div class="d">Destinazione di modulo</div></div></div>

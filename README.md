@@ -1,6 +1,6 @@
-# Hotsflow Design
+# Homisuite Design
 
-Riferimento di design/UI per lo sviluppo dell'App Shell Hotsflow e dei moduli
+Riferimento di design/UI per lo sviluppo dell'App Shell Homisuite e dei moduli
 (Housekeeping, Turni, Transfer). Contiene prototipi statici HTML/CSS —
 **nessun backend, nessuna logica applicativa reale, nessuna dipendenza da
 Supabase/Core**. Sono materiale di riferimento visivo/strutturale per chi
@@ -8,7 +8,7 @@ implementa, non codice di produzione.
 
 ## File
 
-- **`hotsflow-reference.html`** — i due documenti sotto, **unificati in un
+- **`homisuite-reference.html`** — i due documenti sotto, **unificati in un
   solo file**: stesso contenuto, una sola pagina con una barra in alto per
   saltare da una sezione all'altra (`#design-standard` / `#app-shell`). È il
   file consigliato per la condivisione — un solo link, nessuna build.
@@ -18,7 +18,7 @@ implementa, non codice di produzione.
   proprio aspetto originale senza interferenze. Generato meccanicamente dai
   due file sorgente qui sotto — se questi cambiano, questo va rigenerato.
 
-- **`app-shell-prototype.html`** — prototipo dell'App Shell Hotsflow: shell
+- **`app-shell-prototype.html`** — prototipo dell'App Shell Homisuite: shell
   di navigazione globale (sidebar, Home per ruolo, Moduli/Team/Impostazioni),
   stati dei moduli, stati di sistema condivisi, note su deep-linking e
   gerarchia dell'informazione, confronto delle due opzioni di navigazione
@@ -44,6 +44,6 @@ browser.
 - I link "Live" sopra puntano alle versioni pubblicate come Claude Artifact;
   i file in questo repo sono lo snapshot corrispondente, per condivisione e
   versionamento fuori da quella piattaforma.
-- Per condividere in un solo link: `hotsflow-reference.html`. Per lavorare
+- Per condividere in un solo link: `homisuite-reference.html`. Per lavorare
   separatamente su design system e prototipo (es. copiare solo i token CSS),
   i due file originali restano disponibili singolarmente.
